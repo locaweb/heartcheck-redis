@@ -1,4 +1,4 @@
-require 'heartcheck-redis'
+require 'heartcheck/redis'
 require 'pry'
 
 RSpec.configure do |config|
