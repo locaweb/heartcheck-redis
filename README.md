@@ -7,7 +7,7 @@ A plugin to check redis connection with heartcheck
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'heartcheck-redis', require: 'heartcheck_redis'
+gem 'heartcheck-redis'
 ```
 
 And then execute:
