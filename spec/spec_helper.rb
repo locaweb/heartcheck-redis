@@ -1,5 +1,5 @@
 require 'heartcheck/redis'
-require 'pry'
+require 'pry-nav'
 
 RSpec.configure do |config|
   config.mock_with :rspec do |c|
