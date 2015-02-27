@@ -1,4 +1,3 @@
-# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'heartcheck/redis/version'
@@ -18,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.test_files = spec.files.grep(/^spec\//)
   spec.require_paths = ['lib']
 
-  # spec.add_dependency 'heartcheck', '~> 1.0.0', '>= 1.0.0'
+  spec.add_dependency 'heartcheck', '~> 1.0.0', '>= 1.0.0'
   spec.add_dependency 'redis', '~> 3.2.0', '>= 3.2.0'
 
   spec.add_development_dependency 'pry-nav', '~> 0.2.0', '>= 0.2.4'
