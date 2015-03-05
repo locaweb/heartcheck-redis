@@ -1,5 +1,7 @@
 # Heartcheck::Redis
 
+[![Build Status](https://travis-ci.org/locaweb/heartcheck-redis.svg)](https://travis-ci.org/locaweb/heartcheck-redis)
+
 A plugin to check redis connection with heartcheck
 
 ## Installation
