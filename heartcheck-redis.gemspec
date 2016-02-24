@@ -17,6 +17,8 @@ Gem::Specification.new do |spec|
   spec.test_files = spec.files.grep(/^spec\//)
   spec.require_paths = ['lib']
 
+  spec.add_runtime_dependency 'net-telnet', '~> 0.1.1'
+
   spec.add_dependency 'heartcheck', '~> 1.0.0', '>= 1.0.0'
   spec.add_dependency 'redis', '~> 3.2.0', '>= 3.2.0'
 
