@@ -14,7 +14,7 @@ GEM
       parser (>= 2.2.0.pre.3, < 3.0)
     coderay (1.1.0)
     diff-lcs (1.2.5)
-    heartcheck (1.2.0)
+    heartcheck (1.2.1)
       multi_json (~> 1.0)
       net-telnet (~> 0.1.1)
       rack (>= 1.4.0, < 2.1)
