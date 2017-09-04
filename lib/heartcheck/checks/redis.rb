@@ -24,7 +24,7 @@ module Heartcheck
       #
       # @return [Bollean]
       def set?(con)
-        con.set('check_test', 'heartcheck') == 'OK'
+        con.set(unique_check_key, 'heartcheck') == 'OK'
       end
 
       # test if can read on redis
@@ -33,7 +33,7 @@ module Heartcheck
       #
       # @return [Bollean]
       def get?(con)
-        con.get('check_test') == 'heartcheck'
+        con.get(unique_check_key) == 'heartcheck'
       end
 
       # test if can delete on redis
@@ -42,7 +42,7 @@ module Heartcheck
       #
       # @return [Bollean]
       def del?(con)
-        con.del('check_test') == 1
+        con.del(unique_check_key) == 1
       end
 
       # customize the error message
@@ -54,6 +54,15 @@ module Heartcheck
       # @return [void]
       def custom_error(name, key_error)
         @errors << "#{name} fails to #{key_error}"
+      end
+
+      # generate an unique redis key
+      # It's necessary to run concurrent application instances/checks using a
+      # shared redis
+      #
+      # @return [String]
+      def unique_check_key
+        @unique_check_key ||= SecureRandom.hex
       end
     end
   end
