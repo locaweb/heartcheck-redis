@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/locaweb/heartcheck-redis.svg)](https://travis-ci.org/locaweb/heartcheck-redis)
 [![Code Climate](https://codeclimate.com/github/locaweb/heartcheck-redis/badges/gpa.svg)](https://codeclimate.com/github/locaweb/heartcheck-redis)
+[![Ebert](https://ebertapp.io/github/locaweb/heartcheck-redis.svg)](https://ebertapp.io/github/locaweb/heartcheck-redis)
 
 ##A plugin to check redis connection with [heartcheck](https://github.com/locaweb/heartcheck).
 
