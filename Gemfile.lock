@@ -4,7 +4,7 @@ PATH
     heartcheck-redis (1.0.2)
       heartcheck (>= 1.0.0)
       net-telnet (~> 0.1.1)
-      redis (>= 3.2.0, < 3.4.0)
+      redis (>= 3.2.0, < 5)
 
 GEM
   remote: https://rubygems.org/

@@ -36,6 +36,14 @@ Heartcheck.setup do |config|
 end
 ```
 
+### For ruby old versions (older than ruby-2.2.2)
+
+If You are using an old version of Ruby, You may run Bundle's script with a specific gemfile.
+
+```shell
+    $ bundle install --gemfile=Gemfile-old-ruby
+```
+
 ### Check Heartcheck example [here](https://github.com/locaweb/heartcheck/blob/master/lib/heartcheck/generators/templates/config.rb)
 
 ## License
