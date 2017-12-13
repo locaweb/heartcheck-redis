@@ -21,3 +21,5 @@ matrix:
     - rvm: "2.3.0"
     - rvm: "2.3.3"
     - rvm: "2.4.1"
+    - rvm: "2.4.1"
+      gemfile: Gemfile-redis-3
