@@ -19,13 +19,13 @@ Gem::Specification.new do |spec|
 
   spec.add_runtime_dependency 'net-telnet', '~> 0.1.1'
 
-  spec.add_dependency 'heartcheck', '>= 1.0.0'
+  spec.add_dependency 'heartcheck', '~> 1.0'
   spec.add_dependency 'redis', '>= 3.2.0', '< 5'
 
-  spec.add_development_dependency 'pry-nav', '~> 0.2.0', '>= 0.2.4'
-  spec.add_development_dependency 'rspec', '~> 3.1.0', '>= 3.1.0'
-  spec.add_development_dependency 'rubocop', '~> 0.27.0', '>= 0.27.1'
+  spec.add_development_dependency 'pry-nav', '~> 0.2', '>= 0.2.4'
+  spec.add_development_dependency 'rspec', '~> 3.1'
+  spec.add_development_dependency 'rubocop', '~> 0.27', '>= 0.27.1'
   # for documentation
-  spec.add_development_dependency 'yard', '~> 0.8.0', '>= 0.8.7'
-  spec.add_development_dependency 'redcarpet', '~> 3.2.0', '>= 3.2.2'
+  spec.add_development_dependency 'yard', '~> 0.8', '>= 0.8.7'
+  spec.add_development_dependency 'redcarpet', '~> 3.2', '>= 3.2.2'
 end
