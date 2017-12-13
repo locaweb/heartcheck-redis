@@ -70,7 +70,7 @@ DEPENDENCIES
   pry-nav (~> 0.2, >= 0.2.4)
   redcarpet (~> 3.2, >= 3.2.2)
   rspec (~> 3.1)
-  rubocop (~> 0.27, >= 0.27.1)
+  rubocop (~> 0.48, >= 0.27.1)
   yard (~> 0.8, >= 0.8.7)
 
 BUNDLED WITH
