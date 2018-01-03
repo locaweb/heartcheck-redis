@@ -71,7 +71,7 @@ DEPENDENCIES
   redcarpet (~> 3.2, >= 3.2.2)
   rspec (~> 3.1)
   rubocop (~> 0.48, >= 0.27.1)
-  yard (~> 0.8, >= 0.8.7)
+  yard (~> 0.9.11)
 
 BUNDLED WITH
    1.16.0
