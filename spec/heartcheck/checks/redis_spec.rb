@@ -8,6 +8,15 @@ RSpec.describe Heartcheck::Checks::Redis do
     end
   end
 
+  describe '#uri_info' do
+    context 'when a connection is set up' do
+      it 'returns proper URI data on connection settings' do
+        response = subject.uri_info
+        expect(response).to eq({ host: '127.0.0.1', port: 6379, scheme: 'redis'} )
+      end
+    end
+  end
+
   describe '#validate' do
     context 'when nothing fails' do
       it 'calls set get and delete' do

@@ -16,6 +16,15 @@ module Heartcheck
         end
       end
 
+      def uri_info
+        opts = services.first[:connection].connection
+        {
+          host: opts[:host],
+          port: opts[:port],
+          scheme: 'redis'
+        }
+      end
+
       private
 
       # test if can write on redis
