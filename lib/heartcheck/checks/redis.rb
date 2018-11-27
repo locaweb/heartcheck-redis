@@ -21,7 +21,7 @@ module Heartcheck
         {
           host: opts[:host],
           port: opts[:port],
-          scheme: 'redis'
+          scheme: 'redis'.freeze
         }
       end
 
