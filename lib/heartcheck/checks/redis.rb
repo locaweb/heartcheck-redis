@@ -16,13 +16,18 @@ module Heartcheck
         end
       end
 
+      # list services uri info
+      #
+      # @return [Array]
       def uri_info
-        opts = services.first[:connection].connection
-        {
-          host: opts[:host],
-          port: opts[:port],
-          scheme: 'redis'.freeze
-        }
+        services.map do |s|
+          opts = s[:connection].connection
+          {
+            host: opts[:host],
+            port: opts[:port],
+            scheme: 'redis'.freeze
+          }
+        end
       end
 
       private
