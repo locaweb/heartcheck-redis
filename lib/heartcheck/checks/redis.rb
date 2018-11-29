@@ -16,6 +16,20 @@ module Heartcheck
         end
       end
 
+      # list services uri info
+      #
+      # @return [Array]
+      def uri_info
+        services.map do |s|
+          opts = s[:connection].connection
+          {
+            host: opts[:host],
+            port: opts[:port],
+            scheme: 'redis'.freeze
+          }
+        end
+      end
+
       private
 
       # test if can write on redis

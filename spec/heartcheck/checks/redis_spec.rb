@@ -8,6 +8,23 @@ RSpec.describe Heartcheck::Checks::Redis do
     end
   end
 
+  describe '#uri_info' do
+    context 'when multiple servers are set up' do
+      before do
+        another_conn = ::Redis.new(url: 'redis://another.com:1234')
+        subject.add_service(name: 'another', connection: another_conn)
+      end
+
+      it 'returns proper URI data on connection settings' do
+        response = subject.uri_info
+        expect(response).to eq([
+                                 { host: '127.0.0.1', port: 6379, scheme: 'redis' },
+                                 { host: 'another.com', port: 1234, scheme: 'redis' }
+                               ])
+      end
+    end
+  end
+
   describe '#validate' do
     context 'when nothing fails' do
       it 'calls set get and delete' do
