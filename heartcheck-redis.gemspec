@@ -17,15 +17,17 @@ Gem::Specification.new do |spec|
   spec.test_files = spec.files.grep(/^spec\//)
   spec.require_paths = ['lib']
 
+  spec.required_ruby_version = '>= 2.3'
+
   spec.add_runtime_dependency 'net-telnet', '~> 0.1.1'
 
-  spec.add_dependency 'heartcheck', '~> 1.0'
+  spec.add_dependency 'heartcheck', '~> 2.0'
   spec.add_dependency 'redis', '>= 3.2.0', '< 5'
 
   spec.add_development_dependency 'pry-nav', '~> 0.2', '>= 0.2.4'
   spec.add_development_dependency 'rspec', '~> 3.1'
-  spec.add_development_dependency 'rubocop', '~> 0.48', '>= 0.27.1'
+  spec.add_development_dependency 'rubocop', '~> 0.52'
   # for documentation
-  spec.add_development_dependency 'yard', '~> 0.9.11'
+  spec.add_development_dependency 'yard', '~> 0.9'
   spec.add_development_dependency 'redcarpet', '~> 3.2', '>= 3.2.2'
 end

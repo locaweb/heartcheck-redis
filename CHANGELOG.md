@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 2.0.0
+### Changed
+- Add support for ruby 2.7
+- Remove support for ruby < 2.3
+
 ## 1.1.0
 ### Added
 - Custom implementation of Check#uri_info to provide Redis connections data
