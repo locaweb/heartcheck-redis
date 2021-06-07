@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 2.2.0
+### Changed
+- Remove support for ruby < 2.6;
+- Adds script and docker to facilitate development environment setup.
+
 ## 2.1.0
 ### Changed
 - Remove support for ruby < 2.5
