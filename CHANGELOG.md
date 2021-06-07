@@ -8,6 +8,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 - Remove support for ruby < 2.6;
 - Adds script and docker to facilitate development environment setup.
 
+## 2.1.1
+### Fixed
+- Update rake gem to >= 12.3.3
+
 ## 2.1.0
 ### Changed
 - Remove support for ruby < 2.5
