@@ -1,6 +1,6 @@
 RSpec.describe Heartcheck::Checks::Redis do
   let(:redis_host) { ENV['REDIS_HOST'] || '127.0.0.1' }
-  let(:redis_port) { ENV['REDIS_PORT'] || 6388 }
+  let(:redis_port) { ENV['REDIS_PORT'] || 6379 }
   let(:connection) { ::Redis.new(host: redis_host, port: redis_port) }
   let(:check_errors) { subject.instance_variable_get(:@errors) }
 

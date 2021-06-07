@@ -6,7 +6,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/).
 ## 2.2.0
 ### Changed
 - Remove support for ruby < 2.6;
-- Adds script and docker to facilitate development environment setup.
+- Adds script and docker to facilitate development environment setup;
+- Adds support for ruby 3.
 
 ## 2.1.1
 ### Fixed
