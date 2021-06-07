@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'redis', '>= 3.2.0', '< 5'
 
   spec.add_development_dependency 'pry-nav', '~> 0.2', '>= 0.2.4'
-  spec.add_development_dependency 'rake', '~> 10.0'
+  spec.add_development_dependency "rake", ">= 12.3.3"
   spec.add_development_dependency 'rspec', '~> 3.1'
   spec.add_development_dependency 'rubocop', '~> 0.52'
   # for documentation

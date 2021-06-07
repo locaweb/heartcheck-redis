@@ -3,6 +3,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/).
 
+## 2.1.1
+### Fixed
+- Update rake gem to >= 12.3.3
+
+## 2.1.0
+### Changed
+- Remove support for ruby < 2.5
+
 ## 2.1.0
 ### Changed
 - Remove support for ruby < 2.5
