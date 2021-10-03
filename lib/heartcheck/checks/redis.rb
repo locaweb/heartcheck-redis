@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Heartcheck
   module Checks
     # Check for a redis service
@@ -25,7 +27,7 @@ module Heartcheck
           {
             host: opts[:host],
             port: opts[:port],
-            scheme: 'redis'.freeze
+            scheme: 'redis'
           }
         end
       end
