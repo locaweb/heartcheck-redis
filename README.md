@@ -46,6 +46,22 @@ If You are using an old version of Ruby, You may run Bundle's script with a spec
 
 ### Check Heartcheck example [here](https://github.com/locaweb/heartcheck/blob/master/lib/heartcheck/generators/templates/config.rb)
 
+## Development setup using Docker
+
+The Docker Hearthcheck-Redis provides a container with the current stable version of Ruby released and a second Docker container running Memcached. The development setup requires you to have these tools available in your local environment:
+
+-   [Docker](https://docs.docker.com/get-docker/)
+-   [Docker Compose](https://docs.docker.com/compose/install/)
+-   [Bash](https://www.gnu.org/software/bash/)
+
+#### BootStrap Script to run the dockerized environment
+
+```bash
+./scripts/heartcheck-redis setup
+```
+
+Run the command `./scripts/heartcheck-redis -h` to see available options.
+
 ## License
 * [MIT License](https://github.com/locaweb/heartcheck-redis/blob/master/LICENSE.txt)
 
