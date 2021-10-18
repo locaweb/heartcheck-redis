@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'heartcheck/redis'
 require 'pry-nav'
 

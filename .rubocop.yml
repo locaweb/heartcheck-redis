@@ -1,0 +1,19 @@
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.6
+  SuggestExtensions: false
+
+Style/Documentation:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Style/Encoding:
+  Enabled: false
+
+Metrics/BlockLength:
+  Max: 180
+
+Metrics/MethodLength:
+  Max: 29

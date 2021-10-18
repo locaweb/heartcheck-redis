@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # from hearcheck gem
 module Heartcheck
   # gem version
