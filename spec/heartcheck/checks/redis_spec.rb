@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe Heartcheck::Checks::Redis do
   let(:redis_host) { ENV['REDIS_HOST'] || '127.0.0.1' }
   let(:redis_port) { ENV['REDIS_PORT'] || 6379 }
@@ -19,10 +21,12 @@ RSpec.describe Heartcheck::Checks::Redis do
 
       it 'returns proper URI data on connection settings' do
         response = subject.uri_info
-        expect(response).to eq([
-          { host: redis_host, port: redis_port.to_i, scheme: 'redis' },
-          { host: 'another.com', port: 1234, scheme: 'redis' }
-        ])
+        expect(response).to eq(
+          [
+            { host: redis_host, port: redis_port.to_i, scheme: 'redis' },
+            { host: 'another.com', port: 1234, scheme: 'redis' }
+          ]
+        )
       end
     end
   end
